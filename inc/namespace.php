@@ -33,7 +33,7 @@ function bootstrap() {
 			$config['email-from-address'],
 			FILTER_VALIDATE_EMAIL,
 			FILTER_NULL_ON_FAILURE
-		) ?? $email;
+		) ?: $email;
 	}, 1 );
 
 	// Load the platform as soon as WP is loaded.
